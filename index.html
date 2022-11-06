@@ -4,79 +4,116 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <title>Main</title>
 </head>
 <body>
-    <header>
+    <header class="header wrapper">
         <img src="img/logo.png" alt="Logo">
-        <nav>
-            <ul>
-                <li>
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li class="header__item">
                     <a href="#">Blog</a>
                 </li>
-                <li>
+                <li class="header__item">
                     <a href="#">Catalog</a>
                 </li>
-                <li>
+                <li class="header__item">
                     <a href="#">About us</a>
                 </li>
             </ul>
         </nav>
-        <a href="#">🔎</a>
-        <a href="#">Contact Us</a>
+        <button class="header__button">
+            <img src="img/search_button.png" alt="">
+        </button>
+        <a href="#" class="header__contact">Contact Us</a>
     </header>
 
-    <main>
+    <main class="main">
         <section class="banner">
-            <h1>THE OOH NOO
-                COLLECTION</h1>
-            <h2>Designed in Slovenia</h2>
-            <button>EXPLORE NOW</button>
-            <h2>Free (continental) USA shipping on all orders of $100 USD or more!</h2>
+            <div class="banner__content">
+                <div class="banner__buttons__section">
+                    <h1>01</h1>
+                    <ul>
+                        <li class="banner__selected__button"></li>
+                        <li class="banner__button"></li>
+                        <li class="banner__button"></li>
+                        <li class="banner__button"></li>
+                    </ul>
+                </div>
+                <div class="banner__info">
+                    <h2>THE OOH NOO COLLECTION</h2>
+                    <h3>Designed in Slovenia</h3>
+                    <button class="button">EXPLORE NOW</button>
+                </div>
+                <img class="banner__img" src="img/banner.png" alt="">
+            </div>
+            <p class="banner__text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
         </section>
 
         <section>
-            <h2>Category Products</h2>
-            <ul>
+            <h2 class="products__header">Category Products</h2>
+            <ul class="products__list">
                 <li>
-                    <h3>APPAREL
-                        KIDS</h3>
+                    <a href="#">
+                        <img src="img/products_1.png" alt="APPAREL KIDS">
+                    </a>
                 </li>
                 <li>
-                    <h3>HOLIDAY SHOP</h3>
+                    <a href="#">
+                        <img src="img/products_2.png" alt="HOLIDAY SHOP">
+                    </a>
                 </li>
                 <li>
-                    <h3>TOYS</h3>
+                    <a href="#">
+                        <img src="img/products_3.png" alt="TOYS">
+                    </a>
                 </li>
                 <li>
-                    <h3>ACCESSORIES</h3>
+                    <a href="#">
+                        <img src="img/products_4.png" alt="ACCESSORIES">
+                    </a>
                 </li>
             </ul>
-            <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+            <div class="products__footer">
+                <button class="products__button">
+                    <img src="img/arrow_button_left.png" alt="">
+                </button>
+                <button class="products__button">
+                    <img src="img/arrow_button_right.png" alt="">
+                </button>
+                <p>Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+            </div>
         </section>
 
-        <section>
+        <section class="center__menu">
             <img src="img/delivery.png" alt="Delivery">
-            <h2>Delivery</h2>
-            <ul>
-                <li>
-                    <h3>Delivery</h3>
-                </li>
-                <li>
-                    <h3>Guarantee</h3>
-                </li>
-                <li>
-                    <h3>Credit</h3>
-                </li>
-            </ul>
-            <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-            <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-            <a href="#" class="button">LEARN MORE</a>
+            <div class="center__menu__content">
+                <h2>Delivery</h2>
+                <ul>
+                    <li>
+                        <h3 class="center__menu__selected">Delivery</h3>
+                    </li>
+                    <li>
+                        <h3 class="center__menu__unselected">Guarantee</h3>
+                    </li>
+                    <li>
+                        <h3 class="center__menu__unselected">Credit</h3>
+                    </li>
+                </ul>
+                <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                <button class="button">LEARN MORE</button>
+            </div>
         </section>
 
         <section>
-            <h2>Companies</h2>
-            <ul>
+            <ul class="companies">
                 <li>
                     <img src="img/companies_1.png" alt="Mail">
                 </li>
@@ -91,100 +128,107 @@
                 </li>
             </ul>
         </section>
+
+        <article class="bottom__columns">
+            <div>
+                <h2>Design Life Kids</h2>
+                <h3>About Us</h3>
+                <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.  </p>
+                <button href="#" class="button">buy now</button>
+            </div>
+            <div class="contacts__div">
+                <h2>Contacts</h2>
+                <p class="contacts__text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2371.0284538284072!2d49.329039215982085!3d53.53940616793361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ad6cec44f7%3A0x1f2f17a27033b235!2z0YPQuy4g0JDQstGC0L7RgdGC0YDQvtC40YLQtdC70LXQuSwgMTUsINCi0L7Qu9GM0Y_RgtGC0LgsINCh0LDQvNCw0YDRgdC60LDRjyDQvtCx0LsuLCA0NDUwMzA!5e0!3m2!1sru!2sru!4v1667761176350!5m2!1sru!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </article>
     </main>
 
-    <article>
-        <div>
-            <h2>Design Life Kids</h2>
-            <h3>About Us</h3>
-            <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.  </p>
-            <a href="#" class="button">buy now</a>
-        </div>
-        <div>
-            <h2>Contacts</h2>
-            <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-        </div>
-        <img src="img/map.png" alt="Map">
-    </article>
-
-    <footer>
-        <div>
-            <p>Navigation</p>
-            <ul>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Design Services</a>
-                </li>
-                <li>
-                    <a href="#">Featured On</a>
-                </li>
-                <li>
-                    <a href="#">2018 Holiday Catalog</a>
-                </li>
-                <li>
-                    <a href="#">Shop By Designer</a>
-                </li>
-            </ul>
+    <footer class="footer__wrapper">
+        <div class="footer__str1">
+            <div class="footer__column">
+                <p class="footer__header">Navigation</p>
+                <ul class="footer__el">
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Design Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Featured On</a>
+                    </li>
+                    <li>
+                        <a href="#">2018 Holiday Catalog</a>
+                    </li>
+                    <li>
+                        <a href="#">Shop By Designer</a>
+                    </li>
+                </ul>
+                </div>
+            <div class="footer__column">
+                <p class="footer__header">Customer Information</p>
+                <ul class="footer__el">
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Sale Exclusions</a>
+                    </li>
+                    <li>
+                        <a href="#">Shipping & Returns</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
             </div>
-        <div>
-            <p>Customer Information</p>
-            <ul>
-                <li>
-                    <a href="#">Contact Us</a>
-                </li>
-                <li>
-                    <a href="#">Sale Exclusions</a>
-                </li>
-                <li>
-                    <a href="#">Shipping & Returns</a>
-                </li>
-                <li>
-                    <a href="#">Terms & Conditions</a>
-                </li>
-                <li>
-                    <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#">Search</a>
-                </li>
-            </ul>
+            <div class="footer__last__column">
+                <p class="footer__header">Connect</p>
+                <div class="email">
+                    <input type="text" placeholder="Email" class="email__input">
+                    <button class="button">Join</button>
+                </div>
+                <ul class="socials__list">
+                    <li class="socials__el">
+                        <a href="#">
+                            <img src="img/socials_1.png" alt="Facebook">
+                        </a>
+                    </li>
+                    <li class="socials__el">
+                        <a href="#">
+                            <img src="img/socials_2.png" alt="Twitter">
+                        </a>
+                    </li>
+                    <li class="socials__el">
+                        <a href="#">
+                            <img src="img/socials_3.png" alt="Printerest">
+                        </a>
+                    </li>
+                    <li class="socials__el">
+                        <a href="#">
+                            <img src="img/socials_4.png" alt="Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <p>Connect</p>
-            <input type="text" placeholder="Email">
-            <button>Join</button>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="img/socials_1.png" alt="Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/socials_2.png" alt="Twitter">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/socials_3.png" alt="Printerest">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/socials_4.png" alt="Instagram">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <p>Company Rating</p>
-            <p>Copyright © 2018 Dlk • Design Life Kids</p>
-            <a href="#">Web Design — Direct Line Development</a>
+        <div class="footer__str2">
+            <div class="footer__rating__column">
+                <p class="footer__rating">Company Rating</p>
+                <button class="footer__rating">★★★★★</button>
+            </div>
+            <p class="footer__column">Copyright © 2018 Dlk • Design Life Kids</p>
+            <a class="footer__last__column" href="#">Web Design — Direct Line Development</a>
         </div>
     </footer>
 </body>
